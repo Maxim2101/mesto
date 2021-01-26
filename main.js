@@ -1,5 +1,5 @@
 let popup = document.querySelector('.popup')
-let popupOn = document.querySelector('.profile__karandash')
+let popupOn = document.querySelector('.profile__EditButton')
 let popupClose = document.querySelector('.popup__close')
 
 function togglePopup (evt) {
@@ -10,7 +10,7 @@ popup.classList.toggle('popup__opened')
 popupOn.addEventListener('click', togglePopup)
 popupClose.addEventListener('click', togglePopup)
 
-let profileBtn = document.querySelector('.popup__formsubmit-btn')
+let profileBtn = document.querySelector('.popup__SubmitButton')
 let nameInput = document.querySelector('.popup__change-name')
 let jobInput = document.querySelector('.popup__change-job')
 

@@ -1,16 +1,16 @@
-.profile__karandash{
+.profile__EditButton{
     max-width: 24px;
     max-height: 24px;
     margin-left: 18px;
-    padding-top: 37px;
+    padding-top: 15px;
     opacity: 1;
 }
-.profile__karandash:hover {
+.profile__EditButton:hover {
     transition: link-hover 5s linear forwards;
     opacity: 0.6;
   }
 @media screen and (max-width: 899px) {
-    .profile__karandash{
+    .profile__EditButton{
         max-width: 18px;
         max-height: 18px;
         margin: 0;

@@ -1,0 +1,7 @@
+.popup__close_img{
+
+}
+.popup__close_img:hover{
+    transform: rotateZ(-45deg);
+    opacity: 0.6;
+}

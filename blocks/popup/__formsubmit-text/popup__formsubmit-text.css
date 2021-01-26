@@ -1,0 +1,19 @@
+.popup__formsubmit-text{
+   font-family: Inter, Arial, sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 22px;
+   text-align: center;
+   color: #FFFFFF;
+   margin: 0;
+}
+@media screen and (max-width: 899px) {
+   .popup__formsubmit-text{
+      width: 74px;
+      height: 18px;
+      font-size: 14px;
+      line-height: 17px;
+      margin: auto;
+   }
+ }

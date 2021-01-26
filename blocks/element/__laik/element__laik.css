@@ -1,0 +1,20 @@
+.element__laik{
+    width: 22px;
+    height: 19px;
+    background-image: url(../../../images/Laikdisabled.png);
+    background-size: 22px 19px;
+    background-repeat: no-repeat;
+    padding-right: 30px;
+}
+.element__laik:hover{
+    background-image: url(../../../images/Laikhover.png);
+}
+.element__laik:active{
+    background-image: url(../../../images/Laikactive.png);
+}
+@media screen and (max-width: 899px) {
+    .element__laik{
+        background-size: 19px 19px;
+        width: 19px;
+    }
+  }

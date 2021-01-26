@@ -1,0 +1,19 @@
+.popup__change-name{
+    width: 358px;
+    height: 14px;
+    border: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;    
+    color: #000000;
+    margin-bottom: 13px;
+    margin-top: 54px;
+}
+@media screen and (max-width: 899px) {
+    .popup__change-name{
+        width: 238px;
+        margin-top: 75px;    
+    }
+  }

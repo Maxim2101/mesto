@@ -1,0 +1,16 @@
+.popup__form-container{
+    width: 430px;
+    height: 330px;
+    position: absolute;
+    top: 195px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media screen and (max-width: 899px) {
+    .popup__form-container{
+        position: fixed;
+        margin: 0;
+        width: 282px;
+        height: 322px;
+    }
+  }

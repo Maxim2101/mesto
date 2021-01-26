@@ -1,7 +1,7 @@
-.popup__close_img{
+.popup__close_Icon{
 
 }
-.popup__close_img:hover{
+.popup__close_Icon:hover{
     transform: rotateZ(-45deg);
     opacity: 0.6;
 }

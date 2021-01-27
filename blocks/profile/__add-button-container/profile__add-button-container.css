@@ -1,0 +1,24 @@
+.profile__add-button-container {
+  display: flex;
+  width: 150px;
+  height: 50px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 2px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 244px;
+  margin-top: 35px;
+  opacity: 1;
+  background: #000000;
+}
+.profile__add-button-container:hover {
+  opacity: 0.6;
+}
+@media screen and (max-width: 899px) {
+  .profile__add-button-container {
+      width: 282px;
+      margin-left: 0px;
+      margin-top: 36px;
+  }
+}

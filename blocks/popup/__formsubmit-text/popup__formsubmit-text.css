@@ -6,14 +6,10 @@
    line-height: 22px;
    text-align: center;
    color: #ffffff;
-   margin: 0;
 }
 @media screen and (max-width: 899px) {
    .popup__formsubmit-text {
-       width: 74px;
-       height: 18px;
        font-size: 14px;
        line-height: 17px;
-       margin: auto;
    }
 }

@@ -1,20 +1,21 @@
 .popup__close {
-    max-width: 40px;
-    max-height: 40px;
+    width: 57px;
+    height: 57px;
     display: block;
-    padding-left: 430px;
+    /* padding-left: 430px; */
     opacity: 1;
     background: none;
+    margin-bottom: -17px;    
 }
 .popup__close:hover {
     opacity: 0.6;
 }
 @media screen and (max-width: 899px) {
     .popup__close {
-        max-height: 26px;
-        max-width: 26px;
-        padding-left: 245px;
-        margin-bottom: 20px;
+        max-height: 37px;
+        max-width: 37px;
+        /* padding-left: 245px; */
+        margin-bottom: 4px;
         margin-right: 0;
     }
 }

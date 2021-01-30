@@ -1,4 +1,4 @@
-.element__Group {
+.element__group {
     width: 22px;
     height: 19px;
     background-image: url(../../../images/Laikdisabled.svg);
@@ -7,15 +7,18 @@
     margin-right: 30px;
     border: none;
     background-color: #ffffff;
+    opacity: 1;
+    outline: none;
 }
-.element__Group:hover {
-    background-image: url(../../../images/Laikhover.svg);
+.element__group:hover {
+    opacity: 0.6;
 }
-.element__Group:active {
+.element__group:active {
     background-image: url(../../../images/Laikactive.svg);
+    opacity: 1;
 }
 @media screen and (max-width: 899px) {
-    .element__Group {
+    .element__group {
         background-size: 19px 19px;
         width: 19px;
     }

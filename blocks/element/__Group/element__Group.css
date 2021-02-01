@@ -9,12 +9,14 @@
     background-color: #ffffff;
     opacity: 1;
     outline: none;
+    cursor: pointer;
 }
 .element__group:hover {
-    opacity: 0.6;
+    opacity: 0.5;
 }
 .element__group:active {
     background-image: url(../../../images/Laikactive.svg);
+    /* background-color: #000000; */
     opacity: 1;
 }
 @media screen and (max-width: 899px) {

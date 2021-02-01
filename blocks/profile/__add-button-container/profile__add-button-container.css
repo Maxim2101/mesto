@@ -11,6 +11,7 @@
   margin-top: 35px;
   opacity: 1;
   background: #000000;
+  cursor: pointer;
 }
 .profile__add-button-container:hover {
   opacity: 0.6;

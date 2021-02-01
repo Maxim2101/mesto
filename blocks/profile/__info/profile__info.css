@@ -1,7 +1,7 @@
 .profile__info {
     width: 336px;
     padding-left: 30px;
-    text-align: center;
+    /* text-align: center; */
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);

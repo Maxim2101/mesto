@@ -1,8 +1,0 @@
-.popup__change-job {
-    margin-top: 30px;
-}
-@media screen and (max-width: 899px) {
-    .popup__change-job {
-        height: 22px;
-    }
-}

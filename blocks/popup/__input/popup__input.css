@@ -1,4 +1,4 @@
-.popup__change {
+.popup__input {
     width: 358px;
     height: 14px;
     border: none;
@@ -8,11 +8,11 @@
     font-size: 14px;
     line-height: 17px;
     color: #000000;
-    margin-bottom: 13px;
     outline: none;
+    padding-top: 30px;
 }
 @media screen and (max-width: 899px) {
-    .popup__change {
+    .popup__input {
         width: 238px;
     }
 }

@@ -32,4 +32,3 @@ function formSubmitHandler(evt) {
 }
 form.addEventListener("submit", formSubmitHandler);
 form.addEventListener("submit", togglePopup);
-

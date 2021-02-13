@@ -15,13 +15,14 @@
 @import url(../blocks/element/__container/element__container.css);
 @import url(../blocks/element/__group/element__group.css);
 @import url(../blocks/element/__text/element__text.css);
+@import url(../blocks/element/__trash/element__trash.css);
+@import url(../blocks/element/__trash-container/element__trash-container.css);
 @import url(../blocks/profile/__conteiner/profile__conteiner.css);
 @import url(../blocks/profile/__add-button-container/profile__add-button-container.css);
 @import url(../blocks/profile/__add-button/profile__add-button.css);
 @import url(../blocks/profile/__edit-button/profile__edit-button.css);
 @import url(../blocks/popup/__form-container/popup__form-container.css);
 @import url(../blocks/popup/popup.css);
-@import url(../blocks/popup/_opened/popup_opened.css);
 @import url(../blocks/popup/__close/popup__close.css);
 @import url(../blocks/popup/__container/popup__container.css);
 @import url(../blocks/popup/__title/popup__title.css);
@@ -37,3 +38,22 @@
 @import url(../blocks/popup/__input/popup__input.css);
 @import url(../blocks/popup/__input_type_job/popup__input_type_job.css);
 @import url(../blocks/popup/__input_type_name/popup__input_type_name.css);
+@import url(../blocks/popup/popup__item.css);
+@import url(../blocks/popup/__title_item/popup__title_item.css);
+@import url(../blocks/popup/__input_item/popup__input_item.css);
+@import url(../blocks/popup/popup__image.css);
+@import url(../blocks/popup/__image-container/popup__image-container.css);
+@import url(../blocks/popup/__photo/popup__photo.css);
+@import url(../blocks/popup/__input_text/popup__input_text.css);
+@import url(../blocks/popup/__container_image/popup__container_image.css);
+@import url(../blocks/popup/__close_image/popup__close_image.css);
+@import url(../blocks/popup/__closes_image/popup__closes_image.css);
+@import url(../blocks/popup/__item_admin/popup__item_admin.css);
+@import url(../blocks/popup/__item-container/popup__item-container.css);
+@import url(../blocks/popup/__closes_item/popup__closes_item.css);
+@import url(../blocks/popup/__close_item/popup__close_item.css);
+@import url(../blocks/popup/__admin_image/popup__admin_image.css);
+
+
+
+@import url(../blocks/popup/_opened/popup_opened.css);

@@ -1,0 +1,12 @@
+.popup__closes_item {
+    background: none;
+    border: none;
+    width: 18px;
+    padding-left: 417px;
+    outline: none;
+}
+@media screen and (max-width: 899px) {
+    .popup__closes_item {
+        padding-left: 245px;        
+    }
+}

@@ -27,6 +27,9 @@
             </section>
             <section class="elements">
                 <div class="element">
+                    <div class="element__trash">
+                        <img src="./images/Urna.svg" class="element__trash-container" alt="удаление карточки">
+                    </div>
                     <img src="./images/kirill-pershin-1088404-unsplash-1.png" alt="Карачаевск" class="element__photo">
                     <div class="element__container">
                         <h3 class="element__text">Карачаевск</h3>
@@ -34,6 +37,9 @@
                     </div>
                 </div>
                 <div class="element">
+                    <div class="element__trash">
+                        <img src="./images/Urna.svg" class="element__trash-container" alt="удаление карточки">
+                    </div>
                     <img src="./images/kirill-pershin-1404681-unsplash-1.png" alt="Гора Эльбрус" class="element__photo">
                     <div class="element__container">
                         <h3 class="element__text">Гора Эльбрус</h3>
@@ -41,6 +47,9 @@
                     </div>
                 </div>
                 <div class="element">
+                    <div class="element__trash">
+                        <img src="./images/Urna.svg" class="element__trash-container" alt="удаление карточки">
+                    </div>
                     <img src="./images/kirill-pershin-1556355-unsplash-1.png" alt="Домбай" class="element__photo">
                     <div class="element__container">
                         <h3 class="element__text">Домбай</h3>
@@ -48,6 +57,9 @@
                     </div>
                 </div>
                 <div class="element">
+                    <div class="element__trash">
+                        <img src="./images/Urna.svg" class="element__trash-container" alt="удаление карточки">
+                    </div>
                     <img src="./images/kirill-pershin-1404681-unsplash-1.png" alt="Гора Эльбрус" class="element__photo">
                     <div class="element__container">
                         <h3 class="element__text">Гора Эльбрус</h3>
@@ -55,6 +67,9 @@
                     </div>
                 </div>
                 <div class="element">
+                    <div class="element__trash">
+                        <img src="./images/Urna.svg" class="element__trash-container" alt="удаление карточки">
+                    </div>
                     <img src="./images/kirill-pershin-1556355-unsplash-1.png" alt="Домбай" class="element__photo">
                     <div class="element__container">
                         <h3 class="element__text">Домбай</h3>
@@ -62,6 +77,9 @@
                     </div>
                 </div>
                 <div class="element">
+                    <div class="element__trash">
+                        <img src="./images/Urna.svg" class="element__trash-container" alt="удаление карточки">
+                    </div>
                     <img src="./images/kirill-pershin-1088404-unsplash-1.png" alt="Карачаевск" class="element__photo">
                     <div class="element__container">
                         <h3 class="element__text">Карачаево-Ч...</h3>
@@ -88,6 +106,44 @@
                 </div>
             </div>
         </div>
+        <div class="popup__item">
+            <div class="popup__item-container">
+                <button class="popup__closes_item" type="button"><img src="./images/Close.svg" alt="закрыть попап" class="popup__close_item" /></button>
+                <div class="popup__container" name="info">
+                    <h3 class="popup__title_item">Новое место</h3>
+                    <form class="popup__admin_item" name="inform">
+                    <input type="Text" placeholder="Название" class="popup__input_item popup__input_nam" name="heading">
+                    <div class="popup__line"></div>
+                    <input type="Text" placeholder="Ссылка на картинку" class="popup__input_item popup__input_photo" name="subheading">
+                    <div class="popup__line"></div>
+                    <button class="popup__submit-button popup__formsubmit-text" type="submit">Создать</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="popup__image">
+            <div class="popup__image-container">
+                <button class="popup__closes_image" type="button"><img src="./images/Close.svg" alt="закрыть попап" class="popup__close_image" /></button>
+                <div class="popup__container_image" name="info">
+                    <div class="popup__admin_image" name="inform">
+                       <img src="" class="popup__photo">
+                       <div type="Text" placeholder="Название" class="popup__input_text" name="heading"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <template class="template">
+            <div class="element">
+                <div class="element__trash">
+                  <img src="./images/Urna.svg" class="element__trash-container" alt="удаление карточки">
+                </div>
+                <img src="${elementpath.value}" alt="Карачаевск" class="element__photo">
+                <div class="element__container">
+                  <h3 class="element__text">${addElementnam.value}</h3>
+                  <button class="element__group" type="button"></button>
+                </div>
+              </div>
+        </template> -->
         <script src="./scripts/main.js"></script>
     </body>
 </html>

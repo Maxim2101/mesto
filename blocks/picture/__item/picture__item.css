@@ -1,4 +1,4 @@
-.popup__item-container {
+.picture__item {
     width: 430px;
     position: absolute;
     /* top: 195px; */
@@ -8,7 +8,7 @@
     transform: translate(-50%, -50%);
     }
 @media screen and (max-width: 899px) {
-    .popup__item-container {
+    .picture__item {
         position: fixed;
         margin: 0;
         width: 282px;

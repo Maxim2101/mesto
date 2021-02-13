@@ -1,4 +1,4 @@
-.popup__closes_item {
+.picture__closes {
     background: none;
     border: none;
     width: 18px;
@@ -6,7 +6,7 @@
     outline: none;
 }
 @media screen and (max-width: 899px) {
-    .popup__closes_item {
+    .picture__closes {
         padding-left: 245px;        
     }
 }

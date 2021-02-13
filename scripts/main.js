@@ -11,7 +11,7 @@ let jobInput = document.querySelector(".popup__input_type_job");
 let cards = document.querySelectorAll(".element");
 const popupOnitem = document.querySelector(".profile__add-button-container");
 const formItem = document.querySelector(".picture");
-const popupCloseItem = document.querySelector(".popup__close_item");
+const popupCloseItem = document.querySelector(".picture__close");
 let popupImage = document.querySelector(".popup__image");
 let popupOnImage = document.querySelectorAll(".element__photo");
 let popupCloseImage = document.querySelector(".popup__close_image");
@@ -192,7 +192,3 @@ function refrash() {
     resetButton[i].addEventListener('click', deleteElement);
   }
 };
-
-
-
-

@@ -1,0 +1,11 @@
+.picture__line {
+    opacity: 0.2;
+    border-bottom: 1px solid #000000;
+    width: 358px;
+    margin-top: 13px;
+}
+@media screen and (max-width: 899px) {
+    .picture__line {
+        width: 238px;
+    }
+}

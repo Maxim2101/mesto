@@ -54,6 +54,12 @@
 @import url(../blocks/picture/__close/picture__close.css);
 @import url(../blocks/popup/__admin_image/popup__admin_image.css);
 @import url(../blocks/picture/__container/picture__container.css);
+@import url(../blocks/picture/__line/picture__line.css);
+@import url(../blocks/picture/__submit-button/picture__submit-button.css);
+@import url(../blocks/picture/__formsubmit-text/picture__formsubmit-text.css);
+
+
+
 
 
 @import url(../blocks/popup/_opened/popup_opened.css);

@@ -1,4 +1,4 @@
-.popup__input_item {
+.picture__input {
     width: 358px;
     height: 14px;
     border: none;
@@ -12,7 +12,7 @@
     padding-top: 30px;
 }
 @media screen and (max-width: 899px) {
-    .popup__input_item {
+    .picture__input {
         width: 238px;
     }
 }

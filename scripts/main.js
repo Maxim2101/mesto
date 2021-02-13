@@ -20,9 +20,9 @@ let nameImageText = document.querySelector(".popup__input_text");
 let popupPhoto = document.querySelector(".popup__photo");
 let elements = document.querySelectorAll(".element");
 let elementsContainer = document.querySelector(".elements");
-let addElementnam = document.querySelector(".popup__input_nam");
-let elementpath = document.querySelector(".popup__input_photo");
-let elementForm = document.querySelector(".popup__admin_item");
+let addElementnam = document.querySelector(".picture__input_nam");
+let elementpath = document.querySelector(".picture__input_photo");
+let elementForm = document.querySelector(".picture__admin");
 let formImage = document.querySelector(".popup__admin_image");
 let templateE = document.querySelector('.template');
 

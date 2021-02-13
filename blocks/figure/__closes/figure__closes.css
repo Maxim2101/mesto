@@ -1,0 +1,17 @@
+.figure__closes {
+    background: none;
+    border: none;
+    /* padding-left: 417px; */
+    outline: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 899px) {
+    .figure__closes {
+        /* padding-left: 245px;*/
+    }
+}
+@media screen and (min-width: 899px) {
+    .figure__closes {
+       margin-right: -55px; 
+    }
+}

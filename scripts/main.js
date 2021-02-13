@@ -12,9 +12,9 @@ let cards = document.querySelectorAll(".element");
 const popupOnitem = document.querySelector(".profile__add-button-container");
 const formItem = document.querySelector(".picture");
 const popupCloseItem = document.querySelector(".picture__close");
-let popupImage = document.querySelector(".popup__image");
+let popupImage = document.querySelector(".figure");
 let popupOnImage = document.querySelectorAll(".element__photo");
-let popupCloseImage = document.querySelector(".popup__close_image");
+let popupCloseImage = document.querySelector(".figure__close");
 let namImage = document.querySelectorAll(".element__text");
 let nameImageText = document.querySelector(".popup__input_text");
 let popupPhoto = document.querySelector(".popup__photo");
@@ -23,7 +23,7 @@ let elementsContainer = document.querySelector(".elements");
 let addElementnam = document.querySelector(".picture__input_nam");
 let elementpath = document.querySelector(".picture__input_photo");
 let elementForm = document.querySelector(".picture__admin");
-let formImage = document.querySelector(".popup__admin_image");
+let formImage = document.querySelector(".figure__admin");
 let templateE = document.querySelector('.template');
 
 

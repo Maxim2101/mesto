@@ -1,0 +1,21 @@
+.figure__close {
+    width: 57px;
+    height: 57px;
+    display: block;
+    opacity: 1;
+    background: none;
+    /* margin-bottom: -17px; */
+      
+}
+.figure__close:hover {
+        opacity: 0.6;
+}
+@media screen and (max-width: 899px) {
+    .figure__close {
+        max-height: 37px;
+        max-width: 37px;
+     /* padding-left: 245px; */
+        /* margin-bottom: 4px;
+        margin-right: 0; */
+    }
+}

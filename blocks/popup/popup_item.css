@@ -1,4 +1,4 @@
-.popup__item {
+.popup_item {
     display: none;
     position: fixed;
     background: rgba(0, 0, 0, 0.15);
@@ -8,6 +8,6 @@
     left: 0;
 }
 @media screen and (max-width: 899px) {
-    .popup__item {
+    .popup_item {
     }
 }

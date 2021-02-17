@@ -1,4 +1,4 @@
-.popup__form-container_figure {
+.popup__form-container-figure {
     /* width: 430px; */
     position: absolute;
     display: flex;
@@ -11,7 +11,7 @@
     transform: translate(-50%, -50%);
     }
 @media screen and (max-width: 899px) {
-    .popup__form-container_figure {
+    .popup__form-container-figure {
         position: fixed;
         margin: 0;
         /* width: 282px; */

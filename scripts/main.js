@@ -36,7 +36,7 @@ const editProfilePopupClose = document.querySelector('.popup__closes');
 const editProfileForm = document.querySelector('.popup__admin');
 
 const figure = document.querySelector('.popup_type_figure');
-const figureClose = document.querySelector('.popup__closes_figure');
+const figureClose = document.querySelector('.popup__closes-figure');
 const figureImage = document.querySelector('.popup__photo_figure');
 const figureImageSub = document.querySelector('.popup__input_figure');
 

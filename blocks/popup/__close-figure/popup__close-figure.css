@@ -1,15 +1,15 @@
-.popup__close_figure {
+.popup__close-figure {
     width: 57px;
     height: 57px;
     display: block;
     opacity: 1;
     background: none;
 }
-.popup__close_figure:hover {
+.popup__close-figure:hover {
         opacity: 0.6;
 }
 @media screen and (max-width: 899px) {
-    .popup__close_figure {
+    .popup__close-figure {
         max-height: 37px;
         max-width: 37px;
     }

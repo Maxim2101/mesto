@@ -1,10 +1,10 @@
-.popup__container_picture {
+.popup__container-picture {
     background-color: #ffffff;
     border-radius: 10px;
     padding-left: 36px;
 }
 @media screen and (max-width: 899px) {
-    .popup__container_picture {
+    .popup__container-picture {
         padding-left: 22px;
     }
 }

@@ -1,5 +1,5 @@
-.figure__closes {
-    width: 107%;
+.popup__closes_figure {
+    width: 80vw;
     display: flex;
     justify-content: flex-end;
 
@@ -10,14 +10,8 @@
     margin-bottom: -11px;
 }
 @media screen and (max-width: 899px) {
-    .figure__closes {
+    .popup__closes_figure {
         margin-bottom: 13px;
         margin-right: -10px;
     }
 }
-/* @media screen and (min-width: 899px) {
-    .figure__closes {
-
-       margin-right: -55px;
-    }
-} */

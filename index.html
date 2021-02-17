@@ -2,23 +2,23 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Научиться учиться</title>
         <link rel="stylesheet" href="./pages/index.css" />
     </head>
 
     <body class="page">
         <header class="header">
-            <img src="./images/Mesto.svg" alt="Лого хедер" class="header__logo" />
+            <img src="./images/Mesto.svg" alt="Лого хедер" class="header__logo">
         </header>
         <main>
             <section class="profile">
                 <!-- <div class="profile__conteiner"> -->
-                    <img src="./images/Avatar.png" class="profile__avatar" alt="Аватар" />
+                    <img src="./images/Avatar.png" class="profile__avatar" alt="Аватар">
                 <!-- </div> -->
                 <div class="profile__info">
                     <h1 class="profile__title">Жак-Ив Кусто</h1>
-                    <button class="profile__edit-button" type="button"><img src="./images/Karandash.svg" alt="редактировать профиль" class="profile__edit-button-conteiner" /></button>
+                    <button class="profile__edit-button" type="button"><img src="./images/Karandash.svg" alt="редактировать профиль" class="profile__edit-button-conteiner"></button>
                     <h2 class="profile__subtitle">Исследователь океана</h2>
                 </div>
                 <button class="profile__add-button-container" type="button">
@@ -46,46 +46,44 @@
         <footer class="footer">
             <p class="footer__copyright">© 2020 Mesto Russia</p>
         </footer>
-        <div class="popup">
+        <div class="popup popup_type_profile">
             <div class="popup__form-container">
-                <button class="popup__closes" type="button"><img src="./images/Close.svg" alt="закрыть попап" class="popup__close" /></button>
+                <button class="popup__closes" type="button"><img src="./images/Close.svg" alt="закрыть попап" class="popup__close"></button>
                 <div class="popup__container" name="info">
                     <h3 class="popup__title">Редактировать профиль</h3>
                     <form class="popup__admin" name="inform">
-                    <input type="Text" placeholder="" class="popup__input popup__input_type_name" name="heading">
+                    <input type="text" placeholder="" class="popup__input popup__input_type_name" name="heading">
                     <div class="popup__line"></div>
-                    <input type="Text" placeholder="" class="popup__input popup__input_type_job" name="subheading">
+                    <input type="text" placeholder="" class="popup__input popup__input_type_job" name="subheading">
                     <div class="popup__line"></div>
                     <button class="popup__submit-button popup__formsubmit-text" type="submit">Сохранить</button>
                     </form>
                 </div>
             </div>
         </div>
-        <div class="picture">
-            <div class="picture__item">
-                <button class="picture__closes" type="button"><img src="./images/Close.svg" alt="закрыть попап" class="picture__close" /></button>
-                <div class="picture__container" name="info">
-                    <h3 class="picture__title">Новое место</h3>
-                    <form class="picture__admin" name="inform">
-                    <input type="Text" placeholder="Название" class="picture__input picture__input_nam" name="heading">
-                    <div class="picture__line"></div>
-                    <input type="Text" placeholder="Ссылка на картинку" class="picture__input picture__input_photo" name="subheading">
-                    <div class="picture__line"></div>
-                    <button class="picture__submit-button picture__formsubmit-text" type="submit">Создать</button>
+        <div class="popup popup_type_picture">
+            <div class="popup__form-container">
+                <button class="popup__closes_picture" type="button"><img src="./images/Close.svg" alt="закрыть попап" class="popup__close_picture"></button>
+                <div class="popup__container_picture" name="info">
+                    <h3 class="popup__title">Новое место</h3>
+                    <form class="popup__admin popup__admin_picture" name="inform">
+                    <input type="text" placeholder="Название" class="popup__input popup__input_picture" name="heading">
+                    <div class="popup__line"></div>
+                    <input type="text" placeholder="Ссылка на картинку" class="popup__input popup__input_pic" name="subheading">
+                    <div class="popup__line"></div>
+                    <button class="popup__submit-button popup__formsubmit-text" type="submit">Создать</button>
                     </form>
                 </div>
             </div>
         </div>
-        <div class="figure">
-            <div class="figure__container">
-                <button class="figure__closes" type="button"><img src="./images/Close.svg" alt="закрыть попап" class="figure__close" /></button>
-                <div class="figure__form" name="info">
-                    <div class="figure__admin" name="inform">
-                       <img src="./" alt="фото" class="figure__photo">
-                       <div type="Text" placeholder="Название" class="figure__input" name="heading"></div>
-                    </div>
+        <div class="popup popup_type_figure">
+            <div class="popup__form-container_figure">
+                <div class="popup__form_figure" name="info"> 
+                    <button class="popup__closes_figure" type="button"><img src="./images/Close.svg" alt="закрыть попап" class="popup__close_figure"></button>
+                       <img src="./" alt="фото" class="popup__photo_figure">
+                       <div type="text" placeholder="Название" class="popup__input_figure" name="heading"></div>
                 </div>
-            </div>
+            </div>    
         </div>
         <script src="./scripts/main.js"></script>
     </body>

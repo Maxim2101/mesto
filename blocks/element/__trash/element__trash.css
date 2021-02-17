@@ -1,5 +1,6 @@
 .element__trash {
     position: absolute;
     padding-left: 249px;
-    margin-top: 18px;   
+    margin-top: 18px;
+    transition: 0.5s linear;
 }

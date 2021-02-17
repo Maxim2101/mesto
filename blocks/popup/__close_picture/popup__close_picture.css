@@ -1,4 +1,4 @@
-.popup__close_item {
+.popup__close_picture {
     width: 57px;
     height: 57px;
     display: block;
@@ -7,11 +7,11 @@
     margin-bottom: -17px;
     cursor: pointer;    
 }
-.popup__close_item:hover {
+.popup__close_picture:hover {
         opacity: 0.6;
 }
 @media screen and (max-width: 899px) {
-    .popup__close_item {
+    .popup__close_picture {
         max-height: 37px;
         max-width: 37px;
      /* padding-left: 245px; */

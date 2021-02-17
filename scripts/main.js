@@ -37,8 +37,8 @@ const editProfileForm = document.querySelector('.popup__admin');
 
 const figure = document.querySelector('.popup_type_figure');
 const figureClose = document.querySelector('.popup__closes-figure');
-const figureImage = document.querySelector('.popup__photo_figure');
-const figureImageSub = document.querySelector('.popup__input_figure');
+const figureImage = document.querySelector('.popup__photo-figure');
+const figureImageSub = document.querySelector('.popup__input-figure');
 
 const elementTemplateContent = document.querySelector('#element-template').content;
 const elementNode = elementTemplateContent.querySelector('.element');

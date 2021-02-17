@@ -50,8 +50,8 @@
 @import url(../blocks/figure/__closes/figure__closes.css);
 @import url(../blocks/popup/__item_admin/popup__item_admin.css);
 @import url(../blocks/picture/__item/picture__item.css);
-@import url(../blocks/popup/__closes_picture/popup__closes_picture.css);
-@import url(../blocks/popup/__close_picture/popup__close_picture.css);
+@import url(../blocks/popup/__closes-picture/popup__closes-picture.css);
+@import url(../blocks/popup/__close-picture/popup__close-picture.css);
 @import url(../blocks/figure/__admin/figure__admin.css);
 @import url(../blocks/popup/__container_picture/popup__container_picture.css);
 @import url(../blocks/picture/__line/picture__line.css);

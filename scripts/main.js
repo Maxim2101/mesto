@@ -46,7 +46,7 @@ const elements = document.querySelector('.elements')
 
 const addElement = document.querySelector('.profile__add-button-container');
 const formItem = document.querySelector('.popup_type_picture');
-const closeFormItem = document.querySelector('.popup__closes_picture');
+const closeFormItem = document.querySelector('.popup__closes-picture');
 const addItemForm = document.querySelector(".popup__admin_picture");
 
 function closePopup (element) {

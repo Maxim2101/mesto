@@ -121,8 +121,10 @@ function init () {
 
 init();
 
-editProfileForm.onsubmit = onSubmitProfilePopup;
-addItemForm.onsubmit = addItemFormSubmit;
+// editProfileForm.onsubmit = onSubmitProfilePopup;
+editProfileForm.addEventListener ('submit', onSubmitProfilePopup);
+addItemForm.addEventListener ('submit', addItemFormSubmit);
+// addItemForm.onsubmit = addItemFormSubmit;
 figureClose.addEventListener('click', function () {
   closePopup(figure)
 });

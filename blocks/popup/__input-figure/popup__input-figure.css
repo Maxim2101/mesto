@@ -11,6 +11,6 @@
 }
 @media screen and (max-width: 899px) {
     .popup__input-figure {
-        
+        margin-top: 0px;
     }
 }

@@ -52,10 +52,14 @@
                 <div class="popup__container" name="info">
                     <h3 class="popup__title">Редактировать профиль</h3>
                     <form class="popup__admin" name="inform">
-                    <input type="text" placeholder="" class="popup__input popup__input_type_name" name="heading">
+                    <input type="text" placeholder="" class="popup__input popup__input_type_name" name="heading" minlength="2" maxlength="19">
                     <div class="popup__line"></div>
-                    <input type="text" placeholder="" class="popup__input popup__input_type_job" name="subheading">
+                    <div class="popup__errors popup__admin_name-error"></div>
+                    <div class="popup__errors popup__error-name"></div>
+                    <input type="text" placeholder="" class="popup__input popup__input_type_job" name="subheading" minlength="2" maxlength="200">                    
                     <div class="popup__line"></div>
+                    <div class="popup__errors popup__admin_job-error"></div>
+                    <div class="popup__errors popup__error-job"></div>
                     <button class="popup__submit-button popup__formsubmit-text" type="submit">Сохранить</button>
                     </form>
                 </div>
@@ -69,9 +73,12 @@
                     <form class="popup__admin popup__admin_picture" name="inform">
                     <input type="text" placeholder="Название" class="popup__input popup__input_picture" name="heading">
                     <div class="popup__line"></div>
+                    <div class="popup__errors popup__admin_picture-name-error"></div>
+                    <div class="popup__errors popup__error-picture"></div>
                     <input type="text" placeholder="Ссылка на картинку" class="popup__input popup__input_pic" name="subheading">
                     <div class="popup__line"></div>
-                    <button class="popup__submit-button popup__formsubmit-text" type="submit">Создать</button>
+                    <div class="popup__errors popup__admin_picture-link-error"></div>
+                    <button class="popup__submit-button popup__formsubmit-text popup__admin_picture_submit" type="submit">Создать</button>
                     </form>
                 </div>
             </div>
@@ -89,6 +96,7 @@
                 <!-- </div> -->
             </div>    
         </div>
+        <script  src="./validate.js"></script>
         <script src="./scripts/main.js"></script>
     </body>
 </html>

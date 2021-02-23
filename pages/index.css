@@ -65,4 +65,7 @@
 @import url(../blocks/popup/__closes-figure/popup__closes-figure.css);
 @import url(../blocks/popup/__photo-figure/popup__photo-figure.css);
 @import url(../blocks/popup/__overlay/popup__overlay.css);
+@import url(../blocks/popup/__error-name/popup__error-name.css);
+@import url(../blocks/popup/__errors/popup__errors.css);
+@import url(../validate.js);
 @import url(../blocks/popup/_opened/popup_opened.css);

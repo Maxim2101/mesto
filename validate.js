@@ -216,14 +216,14 @@ enableValidation({
     profileName: '.popup__input_type_name',
     profileNameError: '.popup__admin_name-error',
     profileJob: '.popup__input_type_job',
-    profileJobError: '.popup__admin_job-error',
+    profileJobError: '.popup__admin-job-error',
     profileSubmit: '.popup__formsubmit-text',
 
     newPlaceName: '.popup__input_picture',
     newPlaceNameError: '.popup__admin_picture-name-error',
     newPlaceLink: '.popup__input_pic',
-    newPlaceLinkError: '.popup__admin_picture-link-error',
-    newPlaceSubmit: '.popup__admin_picture_submit',
+    newPlaceLinkError: '.popup__admin-picture-link-error',
+    newPlaceSubmit: '.popup__admin-picture-submit',
 
 });
 

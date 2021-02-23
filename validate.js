@@ -220,7 +220,7 @@ enableValidation({
     profileSubmit: '.popup__formsubmit-text',
 
     newPlaceName: '.popup__input_picture',
-    newPlaceNameError: '.popup__admin_picture-name-error',
+    newPlaceNameError: '.popup__admin-picture-name-error',
     newPlaceLink: '.popup__input_pic',
     newPlaceLinkError: '.popup__admin-picture-link-error',
     newPlaceSubmit: '.popup__admin-picture-submit',

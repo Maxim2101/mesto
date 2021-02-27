@@ -1,0 +1,17 @@
+.popup__closes_image {
+    background: none;
+    border: none;
+    /* padding-left: 417px; */
+    outline: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 899px) {
+    .popup__closes {
+        /* padding-left: 245px;*/
+    }
+}
+@media screen and (min-width: 899px) {
+    .popup__closes_image {
+       margin-right: -55px; 
+    }
+}

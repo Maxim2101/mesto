@@ -46,7 +46,7 @@ const elements = document.querySelector('.elements')
 
 const addElement = document.querySelector('.profile__add-button-container');
 const formItem = document.querySelector('.popup_type_picture');
-const closeFormItem = document.querySelector('.popup__closes-picture');
+const closeFormItem = document.querySelector('.popup__closes-pictures');
 const addItemForm = document.querySelector(".popup__admin_picture");
 
 const popupOverlays = document.querySelectorAll('.popup')
@@ -153,6 +153,17 @@ document.addEventListener('keydown', function(event) {
   console.log(event.code)
 })
 
-// popupOverlays.forEach(function(element) {
-//   element.addEventListener()
-// })
+popupOverlays.forEach((popup) => {
+  popup.addEventListener('click', (evt) => {
+    if (evt.target.classList.contains('popup__opened')) {
+      closePopup(formItem);
+      closePopup(editProfilePopup);
+      closePopup(figure);
+    }
+    if (evt.target.classList.contains('popup__button-close')) {
+      closePopup(formItem);
+      closePopup(editProfilePopup);
+      closePopup(figure);
+    }
+  })
+})

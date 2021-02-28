@@ -3,12 +3,10 @@
     border: none;
     width: 40px;
     height: 40px;
-    border: none;
     cursor: pointer;
     position: absolute;
     right: -36px;
     top: -38px;
-    cursor: pointer;
 }
 @media screen and (max-width: 500px) {
     .popup__closes {

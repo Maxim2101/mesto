@@ -49,6 +49,8 @@ const formItem = document.querySelector('.popup_type_picture');
 const closeFormItem = document.querySelector('.popup__closes-picture');
 const addItemForm = document.querySelector(".popup__admin_picture");
 
+const popupOverlays = document.querySelectorAll('.popup')
+
 function closePopup (element) {
   element.classList.remove('popup_opened');
 }
@@ -142,3 +144,15 @@ editProfile.addEventListener('click', function () {
 editProfilePopupClose.addEventListener('click', function () {
   closePopup(editProfilePopup)
 });
+document.addEventListener('keydown', function(event) {
+  if (event.code == 'Escape') {
+    closePopup(editProfilePopup);
+    closePopup(formItem);
+    closePopup(figure);
+  }
+  console.log(event.code)
+})
+
+// popupOverlays.forEach(function(element) {
+//   element.addEventListener()
+// })

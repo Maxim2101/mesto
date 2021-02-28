@@ -41,26 +41,44 @@ function onInput (activeInputErrorClass, errroElement, submitButton) {
     }
 };
 
+function onSubmit (activeInputErrorClass, errroElements, inputs) {
+    return function (event) {
+        let haveOneError = false;
+        inputs.forEach(function(item, index) {
+            if (event.target.value === '') {
+                haveOneError = true;
+                setVisibleError(activeInputErrorClass, errroElements[index], 'Поле не может быть пустым.');
+            }
+        });
+        
+        setDisabledAtribute(event.target)
+    }
+};
 
 function enableValidation (configs) {
-
-    const formList = document.querySelectorAll(config.formSelector);
+    const formList = document.querySelectorAll(configs.formSelector);
 
     formList.forEach(function (form) {
-        const inputs = form.querySelectorAll(config.inputSelector);
-        const errorSpans = form.querySelectorAll(config.inputErrorClass);
-        const submitButton = form.querySelector(config.submitButtonSelector);
+        const inputs = form.querySelectorAll(configs.inputSelector);
+        const errorSpans = form.querySelectorAll(configs.inputErrorClass);
+        const submitButton = form.querySelector(configs.submitButtonSelector);
+
+        const activeInputErrorClass = configs.inputErrorClassActive.replace('.', '');
+
+        submitButton.addEventListener('click', onSubmit(activeInputErrorClass, errorSpans, inputs ));
 
         inputs.forEach(function (input, index) {
             input.addEventListener(
                 'input',
                 onInput(
-                    config.inputErrorClassActive.replace('.', ''),
+                    activeInputErrorClass,
                     errorSpans[index],
                     submitButton
                 )
             );
         });
+
+        
     });
 };
 
@@ -68,13 +86,11 @@ function enableValidation (configs) {
 // включение валидации вызовом enableValidation
 // все настройки передаются при вызове
 
-const config = {
+enableValidation({
     formSelector: '.popup__admin',
     inputSelector: '.popup__input',
     submitButtonSelector: '.popup__submit-button',
     inputErrorClass: '.popup__errors',
     inputErrorClassActive: '.popup__errors-visible'
-}
-
-enableValidation(config);
+});
 

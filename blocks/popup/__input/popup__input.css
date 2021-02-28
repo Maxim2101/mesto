@@ -9,7 +9,8 @@
     line-height: 17px;
     color: #000000;
     outline: none;
-    padding-top: 30px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
 @media screen and (max-width: 899px) {
     .popup__input {

@@ -33,7 +33,7 @@
                     <div class="element__trash">
                         <img src="./images/Urna.svg" class="element__trash-container" alt="удаление карточки">
                     </div>
-                    <img src="./" alt=" " class="element__photo">
+                    <img src="./" alt="./" class="element__photo">
                     <div class="element__container">
                         <h3 class="element__text"></h3>
                         <button class="element__group" type="button"></button>
@@ -47,58 +47,56 @@
             <p class="footer__copyright">© 2020 Mesto Russia</p>
         </footer>
         <div class="popup popup_type_profile">
-            <div class="popup__form-container">
-                <button class="popup__closes" type="button"><img src="./images/Close.svg" alt="закрыть попап" class="popup__close"></button>
-                <div class="popup__container" name="info">
+            <div class="popup__form-container popup__form-container_profil">
+                <button class="popup__closes popup__closes-profil" type="button"></button>
+                <div class="popup__container">
                     <h3 class="popup__title">Редактировать профиль</h3>
-                    <form class="popup__admin" name="inform">
-                        <input type="text" placeholder="" class="popup__input popup__input_type_name" name="heading" minlength="2" maxlength="40">
-                        <div class="popup__line"></div>
-                        <div class="popup__errors"></div>
-                        <input type="text" placeholder="" class="popup__input popup__input_type_job" name="subheading" minlength="2" maxlength="200">                    
-                        <div class="popup__line"></div>
-                        <div class="popup__errors"></div>
+                    <form class="popup__admin popup__admin_profile" name="inform">
+                        <div class="popup__section">
+                            <input type="text" placeholder="" class="popup__input popup__input_type_name" name="heading" minlength="2" maxlength="19" required>
+                            <span class="popup__input-error"></span>
+                        </div>
+                        <div class="popup__section">
+                            <input type="text" placeholder="" class="popup__input popup__input_type_job" name="subheading" minlength="2" maxlength="200" required>                    
+                             <span class="popup__input-error"></span>
+                        </div>
                         <button class="popup__submit-button popup__formsubmit-text" type="submit">Сохранить</button>
                     </form>
                 </div>
             </div>
         </div>
         <div class="popup popup_type_picture">
-            <div class="popup__form-container">
-                <button class="popup__closes popup__closes-pictures" type="button"><img src="./images/Close.svg" alt="закрыть попап" class="popup__close popup__close-pictures"></button>
-                <div class="popup__container-picture" name="info">
+            <div class="popup__form-container popup__form-container_picture">
+                <button class="popup__closes popup__closes-picture" type="button"></button>
+                <div class="popup__container">
                     <h3 class="popup__title">Новое место</h3>
                     <form class="popup__admin popup__admin_picture" name="inform">
-                        <input type="text" placeholder="Название" class="popup__input popup__input_picture" name="heading"  minlength="2" maxlength="40">
-                        <div class="popup__line"></div>
-                        <div class="popup__errors"></div>
-                        <input
-                            type="text"
-                            placeholder="Ссылка на картинку"
-                            class="popup__input popup__input_pic"
-                            name="subheading"
-                            pattern="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)"
-                        >
-                        <div class="popup__line"></div>
-                        <div class="popup__errors"></div>
+                        <div class="popup__section">
+                            <input type="text" placeholder="Название" class="popup__input popup__input_picture" name="heading" minlength="2" maxlength="30" required>
+                            <span class="popup__input-error"></span>
+                        </div>
+                        <div class="popup__section">
+                            <input type="url" placeholder="Ссылка на картинку" class="popup__input popup__input_pic" name="subheading" required>
+                            <span class="popup__input-error"></span>
+                        </div>
                         <button class="popup__submit-button popup__formsubmit-text popup__admin-picture-submit" type="submit">Создать</button>
                     </form>
                 </div>
             </div>
         </div>
         <div class="popup popup_type_figure">
-            <div class="popup__form-container-figure">
-                <button class="popup__closes-figure" type="button"><img src="./images/Close.svg" alt="закрыть попап" class="popup__close-figure"></button>
-                <div class="popup__overlay-figure">
-                    <img src="./" alt="фото" class="popup__photo-figure">
-                    <div type="text" placeholder="Название" class="popup__input-figure" name="heading"></div>
+            <div class="popup__overlay popup__overlay_figure">
+                <div class="popup__form-container-figure">
+                    <button class="popup__closes popup__closes-figure" type="button"></button>
+                    <div class="popup__overlay-figure">
+                        <img src="./" alt="фото" class="popup__photo-figure">
+                        <h3 class="popup__input-figure"></h3>
+                    </div>
                 </div>
-                <!-- <div class="popup__form-figure" name="info">  -->
-                    
-                <!-- </div> -->
-            </div>    
+            </div>   
         </div>
-        <script  src="./scripts/validate.js"></script>
+        
         <script src="./scripts/main.js"></script>
+        <script  src="./scripts/validate.js"></script>
     </body>
 </html>

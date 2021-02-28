@@ -1,96 +1,87 @@
-function getErrorFromElement (element) {
-    if (element.validity.patternMismatch) {
-        return 'Неправильно указана ссылка.';
-    } else if (element.validity.tooLong) {
-        return 'Tекст слишком длинный.';
-    } else if (element.validity.tooShort) {
-        return 'Tекст слишком короткий.';
+const showInputError = (inputElement, errorMessage, inputErrorClass, errorClass) => {
+    
+    const errorElement = inputElement
+    .closest('.popup__section')
+    .querySelector(inputErrorClass);
+
+    errorElement.textContent = errorMessage;
+    errorElement.classList.add(errorClass)
+}
+
+const hideInputError = (inputElement, inputErrorClass, errorClass) =>{
+
+    const errorElement = inputElement
+    .closest('.popup__section')
+    .querySelector(inputErrorClass);
+    
+    errorElement.textContent = '';
+    errorElement.classList.remove(errorClass)
+};
+
+const getErrorMessage = (inputElement) => {
+    if(inputElement.validity.typeMismatch){
+        return 'Введите адрес сайта.'
+    }else {
+        return 'Вы пропустили это поле.'
+    }
+}
+
+const checkInputValidity = (formElement, inputElement, inputErrorClass, errorClass) => {
+    const isInputNotValid = !inputElement.validity.valid;
+
+    if(isInputNotValid) {
+        const errorMessage = getErrorMessage(inputElement);
+
+        showInputError(inputElement, errorMessage, inputErrorClass, errorClass);
     } else {
-        return '';
+        hideInputError(inputElement, inputErrorClass, errorClass);
     }
 };
 
-function setDisabledAtribute (element) {
-    element.setAttribute('disabled', true);
-};
+const toggleButtonState = (inputList, buttonElement, inactiveButtonClass) => {
+    const hasNotValidInput = inputList
+    .some(inputElement => !inputElement.validity.valid);
 
-function removeDisabledAtribute (element) {
-    element.removeAttribute('disabled');
-};
-
-function setVisibleError (activeInputErrorClass, element, message) {
-    element.innerText = message;
-    element.classList.add(activeInputErrorClass);
-};
-
-function setUnVisibleError (activeInputErrorClass, element) {
-    element.innerText = '';
-    element.classList.remove(activeInputErrorClass);
-};
-
-function onInput (activeInputErrorClass, errroElement, submitButton) {
-    return function (event) {
-        const errorMessage = getErrorFromElement(event.target);
-        if (errorMessage !== '') {
-            setVisibleError(activeInputErrorClass, errroElement, errorMessage);
-            setDisabledAtribute(submitButton)
-        } else {
-            setUnVisibleError(activeInputErrorClass, errroElement)
-            removeDisabledAtribute(submitButton)
-        }
+    if(hasNotValidInput){
+        buttonElement.setAttribute('disabled', true);
+        buttonElement.classList.add(inactiveButtonClass)
+    } else {
+        buttonElement.removeAttribute('disabled');
+        buttonElement.classList.remove(inactiveButtonClass)
     }
 };
 
-function onSubmit (activeInputErrorClass, errroElements, inputs) {
-    return function (event) {
-        let haveOneError = false;
-        inputs.forEach(function(item, index) {
-            if (event.target.value === '') {
-                haveOneError = true;
-                setVisibleError(activeInputErrorClass, errroElements[index], 'Поле не может быть пустым.');
-            }
-        });
-        
-        setDisabledAtribute(event.target)
-    }
-};
-
-function enableValidation (configs) {
-    const formList = document.querySelectorAll(configs.formSelector);
-
-    formList.forEach(function (form) {
-        const inputs = form.querySelectorAll(configs.inputSelector);
-        const errorSpans = form.querySelectorAll(configs.inputErrorClass);
-        const submitButton = form.querySelector(configs.submitButtonSelector);
-
-        const activeInputErrorClass = configs.inputErrorClassActive.replace('.', '');
-
-        submitButton.addEventListener('click', onSubmit(activeInputErrorClass, errorSpans, inputs ));
-
-        inputs.forEach(function (input, index) {
-            input.addEventListener(
-                'input',
-                onInput(
-                    activeInputErrorClass,
-                    errorSpans[index],
-                    submitButton
-                )
-            );
-        });
-
-        
+const setEventListeners = (formElement, inputSelector, submitButtonSelector, inactiveButtonClass, inputErrorClass, errorClass) => {
+    formElement.addEventListener('submit', (event) => {
+        event.preventDefault();
     });
+
+    const inputList = Array.from(formElement.querySelectorAll(inputSelector));
+    const buttonElement = formElement.querySelector(submitButtonSelector)
+
+    inputList.forEach((inputElement) => {
+        inputElement.addEventListener('input', (event) => {
+            checkInputValidity(formElement, inputElement, inputErrorClass, errorClass);
+            toggleButtonState(inputList, buttonElement, inactiveButtonClass);
+        });
+    });
+    toggleButtonState(inputList, buttonElement, inactiveButtonClass);
 };
 
+const enableValidation = ({formSelector, inputSelector, submitButtonSelector, inactiveButtonClass, inputErrorClass, errorClass}) => {
+    const formList = Array.from(document.querySelectorAll(formSelector));
 
-// включение валидации вызовом enableValidation
-// все настройки передаются при вызове
+    formList.forEach((formElement) => {
+        setEventListeners(formElement, inputSelector, submitButtonSelector, inactiveButtonClass, inputErrorClass, errorClass)
+    });
+    
+};
 
 enableValidation({
     formSelector: '.popup__admin',
     inputSelector: '.popup__input',
     submitButtonSelector: '.popup__submit-button',
-    inputErrorClass: '.popup__errors',
-    inputErrorClassActive: '.popup__errors-visible'
-});
-
+    inactiveButtonClass: 'popup__submit-button_disable',
+    inputErrorClass: '.popup__input-error',
+    errorClass: 'popup__input-error_active'
+  }); 

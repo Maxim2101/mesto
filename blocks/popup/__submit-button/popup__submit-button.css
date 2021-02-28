@@ -7,17 +7,15 @@
   opacity: 1;
   margin-bottom: 37px;
   outline: none;
+  color: white;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
 }
-
 .popup__submit-button:hover {
   transition: link-hover 5s linear forwards;
   opacity: 0.6;
 }
-
-.popup__submit-button[disabled] {
-  background: #7d7c7c;
-}
-
 @media screen and (max-width: 899px) {
   .popup__submit-button {
       width: 238px;

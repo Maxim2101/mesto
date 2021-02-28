@@ -69,18 +69,7 @@ popups.forEach((popup) => {
       }
   })
 })
-// Закрытие попапа с картинкой по оверлею 
-// const popupFigure = document.querySelectorAll('.popup_type_figuree')
-// popupFigure.forEach((popup) => {
-//   popup.addEventListener('click', (evt) => {
-//       if (evt.target.classList.contains('popup_opened')) {
-//           closePopup(popup)
-//       }
-//       if (evt.target.classList.contains('popup__closes')) {
-//         closePopup(popup)
-//       }
-//   })
-// })
+
 // const closePopupProfil = (event) => {
 //   if (event.target === event.currentTarget)
 //   closePopup(editProfilePopup);

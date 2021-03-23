@@ -87,56 +87,6 @@ initialCards.forEach((item) => {
   elements.prepend(cardElement);
 });
 
-//
-// function like (self) {
-//   self.classList.toggle('element__group_active')
-// }
-//
-// function createCard (link, name ) {
-//   const cloneNode = elementNode.cloneNode(true);
-//   const photo = cloneNode.querySelector('.element__photo');
-//
-//   photo.src = link;
-//   photo.alt = name;
-//
-//   photo.addEventListener('click', function () {
-//     openImage(link, name)
-//   })
-//
-//   overlayPopupFigure.addEventListener('click', handleClosePopup);
-//
-//   cloneNode.querySelector('.element__text').textContent = name;
-//   cloneNode.querySelector('.element__trash').addEventListener('click', function () {
-//     cloneNode.remove()
-//   });
-//   cloneNode.querySelector('.element__group').addEventListener('click', function (evt) {
-//     like(evt.target)
-//   });
-//
-//   return cloneNode;
-// }
-//
-//
-// function addItemFormSubmit (event) {
-//   event.preventDefault();
-//   elements.prepend(
-//     createCard(event.target.subheading.value, event.target.heading.value)
-//   );
-//   addItemForm.reset ();
-//   closePopup(formItem);
-// }
-//
-//
-// function init () {
-//   initialCards.forEach(function (item) {
-//     elements.appendChild(
-//       createCard(item.link, item.name)
-//     )
-//   })
-// }
-//
-// init();
-
 editProfileForm.addEventListener ('submit', onSubmitProfilePopup);
 pictureForm.addEventListener ('submit', addItemFormSubmit);
 
@@ -173,7 +123,7 @@ const sectionValidity = ({
   inactiveButtonClass: 'popup__submit-button_disable',
   inputErrorClass: '.popup__input-error',
   errorClass: 'popup__input-error_active',
-  popupAdmin: '.popup__admin'
+  popupAdmin: '.popup__section'
 });
 
 

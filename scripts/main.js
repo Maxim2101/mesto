@@ -56,6 +56,12 @@ function closeByEscape(evt) {
   }
 }
 
+const launchPopupImage = () => {
+  heading.value = userName.textContent;
+  subheading.value = userJob.textContent;
+  openPopup(editProfilePopup)
+};
+
 function onSubmitProfilePopup (event) {
   event.preventDefault();
   userName.textContent = heading.value;
@@ -65,7 +71,7 @@ function onSubmitProfilePopup (event) {
 
 function openImage (name, link) {
   openPopup(figure)
-  figureImage.src = link;
+  subNameImage.src = link;
   figureImageSub.textContent = name;
 }
 
@@ -75,8 +81,8 @@ function addItemFormSubmit(event){
   const card = new Card({name: nameImage.value, link: subNameImage.value},'.element-template', openImage)
   const cardElement = card.generateCard();
   elements.prepend(cardElement);
-  nameImage.value = ''
-  subNameImage.value = ''
+  nameImage.value = '';
+  subNameImage.value = '';
   pictureForm.reset()
   handleClosePopup(formItem);
 }
@@ -93,6 +99,7 @@ pictureForm.addEventListener ('submit', addItemFormSubmit);
 figureClose.addEventListener('click', function () {
   closePopup(figure)
 });
+
 addElement.addEventListener('click', function () {
   openPopup(formItem)
 });
@@ -104,11 +111,6 @@ editProfilePopupClose.addEventListener('click', function () {
   closePopup(editProfilePopup)
 });
 
-const launchPopupImage = () => {
-  heading.value = userName.textContent;
-  subheading.value = userJob.textContent;
-  openPopup(editProfilePopup)
-};
 
 editProfile.addEventListener('click', launchPopupImage);
 

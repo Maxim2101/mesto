@@ -71,7 +71,7 @@ function onSubmitProfilePopup (event) {
 
 function openImage (name, link) {
   openPopup(figure)
-  subNameImage.src = link;
+  figureImage.src = link;
   figureImageSub.textContent = name;
 }
 

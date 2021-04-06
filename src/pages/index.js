@@ -55,7 +55,6 @@ const editCardForm = new PopupWithForm({
 
 addElement.addEventListener('click', ()=>{
   editCardForm.open()
-  pictureForm.reset()
 })
 
 const openImagePopup = new PopupWithImage('.popup_type_figure');

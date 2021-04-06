@@ -24,7 +24,7 @@ export default  class Popup{
             if(event.target.classList.contains('popup__closes')){
                 this.close()
             }
-            if(event.target.classList.contains('popup__overlay_figure')){
+            if(event.target.classList.contains('popup__overlay')){
                 this.close(event.target)
             }
         })

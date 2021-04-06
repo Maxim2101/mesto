@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Maxim2101/mesto"
+    "url": "git+https://github.com/Maxim2101/mesto.git"
   },
   "author": "Maxim",
   "license": "ISC",

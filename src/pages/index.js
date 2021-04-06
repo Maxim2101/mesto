@@ -1,4 +1,4 @@
-import '../pages/index.css'
+import './index.css'
 import Card from "../components/Card.js";
 import FormValidator from "../components/FormValidator.js";
 import Section from "../components/Section.js";
@@ -55,6 +55,7 @@ const editCardForm = new PopupWithForm({
 
 addElement.addEventListener('click', ()=>{
   editCardForm.open()
+  pictureForm.reset()
 })
 
 const openImagePopup = new PopupWithImage('.popup_type_figure');

@@ -1,6 +1,6 @@
 import Popup from "./Popup.js";
 export class PopupWithForm extends Popup {
-    constructor({handleFormSubmit}, popupSelector) {
+    constructor({popupSelector, handleFormSubmit}) {
         super(popupSelector);
         this._handleFormSubmit = handleFormSubmit;
         this._inputList = this._popup.querySelectorAll('.popup__input');
@@ -27,5 +27,9 @@ export class PopupWithForm extends Popup {
     close() {
         super.close()
         this._popupForm.reset();
+    }
+
+    setMessage(span){
+        this._popupForm.querySelector('.popup__submit-button').textContent = span;
     }
 }

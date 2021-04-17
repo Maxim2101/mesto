@@ -1,0 +1,15 @@
+.profile__redact {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.8) url("../../../images/edit.svg") no-repeat center;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    opacity: 0;
+    transition: .7s opacity linear;
+}
+.profile__redact:hover{
+    opacity: 1;
+}

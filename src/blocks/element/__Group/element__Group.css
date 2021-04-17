@@ -1,15 +1,14 @@
 .element__group {
     width: 22px;
     height: 19px;
-    background-image: url(../../../images/Laikdisabled.svg);
-    background-size: 22px 19px;
-    background-repeat: no-repeat;
+    background: url(../../../images/Laikdisabled.svg) center no-repeat;;
+    background-size: 100%;
     margin-right: 30px;
     border: none;
-    background-color: #ffffff;
     opacity: 1;
     outline: none;
     cursor: pointer;
+    box-sizing: border-box;
     transition: 0.5s linear;
 }
 .element__group:hover {

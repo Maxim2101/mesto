@@ -1,3 +1,3 @@
-# Заголовок-название:  Mesto 9
+# Заголовок-название:  Mesto
 ## В оснавном используем верстку HTML and CSS, но для большего эффекта и красоты страницы используем JS
-### Ссылка на проект https://github.com/Maxim2101/mesto.git
+### Ссылка на проект https://github.com/Maxim2101/mesto/index.html

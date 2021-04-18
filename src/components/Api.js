@@ -31,9 +31,9 @@ export default class Api {
             .then(this._checkData);
     }
 
-    getInitialData() {
-        return Promise.all([this.getInitialCards(), this.getUserInfo()]);
-    }
+    // getInitialData() {
+    //     return Promise.all([this.getUserInfo(), this.getInitialCards()]);
+    // }
 
     setUserInfo(user) {
         return fetch(`${this._url}/users/me`, {
